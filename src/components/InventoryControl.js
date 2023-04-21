@@ -1,8 +1,8 @@
 import React from 'react';
 import Header from './Header';
+import NewItemForm from './NewItemForm';
 import InventoryList from './InventoryList';
 import { v4 } from 'uuid'; 
-import NewItemform from './NewItemForm.js';
 import ItemDetail from './ItemDetail';
 import Modal from './Modal';
 import Cart from './Cart';
@@ -44,11 +44,10 @@ class InventoryControl extends React.Component {
       ],
       selectedItem: null,
       cartShowing: false,
-      cartContents: [],
+      cartContents: []
     };
   }
 
-  
   getItemById = (id, list = this.state.itemList) => {
     return list.filter(item => item.id === id)[0];
   };
@@ -63,6 +62,10 @@ class InventoryControl extends React.Component {
     const newItemList = [...this.state.itemList];
     const depletedItem = this.getItemById(id, newItemList);
     depletedItem.quantity = parseInt(depletedItem.quantity - 1);
+
+    const newCartContents = [...this.state.cartContents];
+    newCartContents.push(id);
+
     this.setState({
       itemList: newItemList,
     });
