@@ -1,4 +1,4 @@
-#  Farmers Market
+#  Local Business Inventory Tracker
 
 #### By Vera Weikel 
 
@@ -7,20 +7,18 @@
 ## Technologies Used
 
 * React
+* JSX
 * Javascript
+* CSS
 
 ## Goals/Objectives
 
-This project shows how to maintain state in React.
-
-There are multiple branches in this repo that are described more below.
+An application in React that tracks inventory for a local business.
 
 
 ## Description
 
-Avery's Organics is a mid-sized farm in Northern Oregon that grows organic produce and sells it at farmers markets throughout town. Since Avery's is at a different market almost every day, they've started a website to show customers which market they will be at on a given day.
-
-Avery's also grows different crops in different seasons. They'd like to display what produce is available during which months on their site too.
+For any given inventory item, there will be tracking how much of it is remaining as it gets sold or given away. 
 
 ## Component Architecture
 
