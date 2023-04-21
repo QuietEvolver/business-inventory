@@ -20,6 +20,14 @@ An application in React that tracks inventory for a local business.
 
 For any given inventory item, there will be tracking how much of it is remaining as it gets sold or given away. 
 
+My local cafe operates as such: 
+
+At our coffee shop, we sell coffee beans in 1-pound servings, and we get our coffee delivered in large burlap sacks. Here are the details:
+
+* we sell multiple types of coffee beans, each in different burlap sacks
+* one burlap sack contains 130 pounds of coffee beans
+* every sale decrements one pound of coffee beans from the burlap sack, until it is empty
+
 ## Component Architecture
 
 ![alt](src/img/component-architecture.png "component-architecture")
