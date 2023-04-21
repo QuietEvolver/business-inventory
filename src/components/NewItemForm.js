@@ -3,7 +3,7 @@ import { v4 } from "uuid";
 import PropTypes from "prop-types";
   
 
-function NewItemForm(props) {
+export default function NewItemForm(props) {
 
   function handleNewItemFormSubmission(e) {
     e.preventDefault();
@@ -74,5 +74,3 @@ NewItemForm.propType = {
   editingItem: PropTypes.object,
   returnToList: PropTypes.func,
 }
-
-export default NewItemForm;
