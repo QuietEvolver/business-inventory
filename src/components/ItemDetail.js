@@ -9,31 +9,31 @@ class ItemDetail extends React.Component {
     super(props);
     this.state = { 
       editModalShowing: false,
-      deleteConfirmModalShowing: false,
+      deleteConfirmModalShowing: false
     }
   }
 
   showEditModal() {
     this.setState(() => ({
-      editModalShowing: true,
+      editModalShowing: true
     }));
   }
 
   hideEditModal() {
     this.setState(() => ({
-      editModalShowing: false,
+      editModalShowing: false
     }));
   }
 
   showDeleteModal() {
     this.setState(() => ({
-      deleteConfirmModalShowing: true,
+      deleteConfirmModalShowing: true
     }));
   }
 
   hideDeleteModal() {
     this.setState(() => ({
-      deleteConfirmModalShowing: false,
+      deleteConfirmModalShowing: false
     }));
   }
 
@@ -79,14 +79,16 @@ class ItemDetail extends React.Component {
           <div>{this.props.item.id}</div>
         </div>
         <div className="details-button-area">
+          
           <button onClick={this.props.onClickBackToList}>Back to list</button>
           <button onClick={() => this.showEditModal()} className='yellow'>Edit</button>
-         
-          {/* <button onClick={() => this.props.onClickDelete(this.props.item.id)} className='red'>Delete</button> */}
+
           <button onClick={() => this.showDeleteModal()} className='red'>Delete</button>
           
           <button disabled={this.props.item.quantity === 0} onClick={() => this.props.onClickBuy(this.props.item.id)} className='green'>Buy</button>
+          
           <button onClick={() => this.props.onClickRestock(this.props.item.id)} className='orange'>Restock</button>
+        
         </div>
       </div>
     );

@@ -18,7 +18,7 @@ Modal.propTypes = {
   showing: PropTypes.bool,
   bodyComponent: PropTypes.object,
   headerText: PropTypes.string,
-  type: PropTypes.string,
+  type: PropTypes.string
 };
 
 export default Modal;

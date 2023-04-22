@@ -15,7 +15,7 @@ export default function NewItemForm(props) {
       roast: e.target.roast.value,
       price: e.target.price.value,
       quantity: e.target.quantity.value,
-      id: v4(),
+      id: v4()
     });
   }
 
@@ -28,7 +28,7 @@ export default function NewItemForm(props) {
       roast: e.target.roast.value || e.target.roast.placeholder,
       price: e.target.price.value || e.target.price.placeholder,
       quantity: e.target.quantity.value || e.target.quantity.placeholder,
-      id: props.editingItem.id,
+      id: props.editingItem.id
     });
     props.returnToList();
   }

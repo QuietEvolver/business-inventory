@@ -20,7 +20,7 @@ function InventoryListEntry(props) {
 
 InventoryListEntry.propTypes = {
   item: PropTypes.object,
-  onClickViewDetails: PropTypes.func,
+  onClickViewDetails: PropTypes.func
 };
 
 export default InventoryListEntry;
