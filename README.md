@@ -9,6 +9,7 @@
 * React
 * JSX
 * Javascript
+* HTML
 * CSS
 
 ## Goals/Objectives
